@@ -78,7 +78,7 @@ console.log(`Test of getLast function, should say "hugs": `, getLast(array));
 function find(value, array) {
   let i = 0;
   while (i < array.length) {
-    if ((array[i] = value)) {
+    if (array[i] === value) {
       return true;
     } else {
       return false;
@@ -87,7 +87,7 @@ function find(value, array) {
   }
 }
 
-console.log(`Test of find function, should say true: `, find(`kitten`, array));
+console.log(`Test of find function, should say true: `, find(`kittens`, array));
 
 // ----------------------
 // Stretch Goals
